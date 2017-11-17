@@ -8,3 +8,8 @@ contet and expose those results in Python 3.x via ctypes Python module.
 
 So far this is failing. Hypothisis is it fails do to my time away from the Python :-)
 
+## Running test
+
+```shell
+    make test
+```
