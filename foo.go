@@ -13,6 +13,8 @@ import (
 	"strings"
 )
 
+const Version = `v0.0.0`
+
 //export blahblah
 func blahblah(cStr *C.char, cCnt C.int) *C.char {
 	// Convert our cStr into a Go string
