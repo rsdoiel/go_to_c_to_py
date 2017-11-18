@@ -1,0 +1,8 @@
+*~
+*.h
+*.so
+*.so.*
+*.dll
+*.dynlib
+*.pyc
+__pycache__
