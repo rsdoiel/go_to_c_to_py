@@ -16,14 +16,15 @@ else:
     foo = ctypes.CDLL('./foo.dll')
 
 foo.blahblah.argstype = [ ctypes.c_char_p, ctypes.c_int ]
-foo.blahblah.restype = ctypes.c_wchar_p
+foo.blahblah.restype = ctypes.c_char_p
 
 #
 # Now we do our testing.
 #
-for i in range(10):
+for i in range(100):
     c_s = foo.blahblah(b'hello world', i+1)
     print("PY MSG:", c_s)
-    #s = c_s.decode()
-    #print("PY MSG:", s)
+    s = c_s.decode('utf-8', 'replace')
+    print('PY MSG len:', len(s))
+    print("PY MSG:", s)
 
