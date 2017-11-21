@@ -13,7 +13,6 @@ OS = $(shell uname)
 # Fallback is Windows, I have no idea is this is reasonable, I don't
 # have a Windows box or tablet.
 EXT = .dll
-
 # Usual supects for shared libraries
 ifeq ($(OS), Linux)
 	EXT = .so
